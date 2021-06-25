@@ -13,6 +13,7 @@ client.on('message', message => {
   if (isReady && message.content === '!sus')
   {
   isReady = false;
+try {
   var voiceChannel = message.member.voiceChannel;
   message.member.voice.channel.join()
   .then(connection =>
@@ -23,6 +24,10 @@ client.on('message', message => {
        });
    }).catch(err => console.log(err));
    isReady = true;
+} catch {
+        message.channel.send('Test');
+}
+
   }
 });
 
