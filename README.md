@@ -90,3 +90,12 @@ npm install ffmpeg-static
 ```sh
 node index.js
 ```
+
+
+## Usage
+
+```sh
+Hop in any voice channels on your server
+
+Type !sus in chat and the bot should play the mp3 file you have provided
+```
