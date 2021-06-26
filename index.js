@@ -6,7 +6,8 @@ var isReady = true;
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
-client.user.setPresence({ activity: { name: 'Red kinda sus' }, status: 'dnd' })
+  client.user.setActivity('Sussing people in ${client.guilds.cache.size} server(s)');
+//client.user.setPresence({ activity: { name: 'Red kinda sus' }, status: 'dnd' })
 })
 
 client.on('message', message => {
